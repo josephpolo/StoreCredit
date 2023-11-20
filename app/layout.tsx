@@ -16,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm lg:flex">
+        <h1>Menu</h1>
+      </div>
+        {children}
+      </body>
     </html>
   )
 }
